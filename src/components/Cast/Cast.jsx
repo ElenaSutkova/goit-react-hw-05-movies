@@ -32,3 +32,5 @@ const Cast = () => {
         </div>
     )
 }
+
+export default Cast;

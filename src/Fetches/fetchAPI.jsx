@@ -3,7 +3,7 @@ const API_KEY = '29f90e29dc5d68acf14782a0c1b612a1';
 export const fetchMovieDetails = async (movieId, setMovieDetails) => {
     try {
         const response = await fetch(
-            `https://api.themoviedb.org/3/movie/${movieId}?api_key=${apiKey}&language=en-US`
+            `https://api.themoviedb.org/3/movie/${movieId}?api_key=${API_KEY}&language=en-US`
         );
 
         if (response.ok) {
@@ -19,7 +19,7 @@ export const fetchMovieDetails = async (movieId, setMovieDetails) => {
 
 export const searchMovies = async (searchTerm, setSearchResults, setShowNoResults, setError) => {
     try {
-        const response = await fetch(`https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&query=${searchTerm}`)
+        const response = await fetch(`https://api.themoviedb.org/3/search/movie?api_key=${API_KEY}&query=${searchTerm}`)
         
         if (response.ok) {
             const data = await response.json()
@@ -35,7 +35,7 @@ export const searchMovies = async (searchTerm, setSearchResults, setShowNoResult
 
 export const fetchCast = async (movieId) => {
     try {
-        const response = await fetch(`https://api.themoviedb.org/3/movie/${movieId}/credits?api_key=${apiKey}`)
+        const response = await fetch(`https://api.themoviedb.org/3/movie/${movieId}/credits?api_key=${API_KEY}`)
         
         if (response.ok) {
             const data = await response.json()
@@ -51,7 +51,7 @@ export const fetchCast = async (movieId) => {
 
 export const fetchReviews = async (movieId) => {
     try {
-        const response = await fetch(`https://api.themoviedb.org/3/movie/${movieId}/reviews?api_key=${apiKey}`)
+        const response = await fetch(`https://api.themoviedb.org/3/movie/${movieId}/reviews?api_key=${API_KEY}`)
 
         if (response.ok) {
             const data = await response.json()
