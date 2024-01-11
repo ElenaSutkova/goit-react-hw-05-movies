@@ -31,10 +31,9 @@ const Movies = () => {
         const params = new URLSearchParams(window.location.search)
         params.set('query', newSearchTerm);
 
-        setSearchParams(params);
-        searchTerm(newSearchTerm);
-        localStorage.setItem('searchterm', newSearchTerm);
-
+        setSearchParams(params)
+        setSearchTerm(newSearchTerm)
+        localStorage.setItem('searchTerm', newSearchTerm)
         searchMovies(newSearchTerm, searchResults, setShowNoResults, setError)
     };
 

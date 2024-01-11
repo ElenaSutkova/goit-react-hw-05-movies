@@ -16,16 +16,16 @@ const Cast = () => {
     }, [movieId]);
 
     return (
-        <div>
-            <h2>Cast</h2>
+        <div className={styles.container}>
+            <h2 className={styles.title}>Cast</h2>
             <ul className={styles.list}>
                 {cast.map((actor) => (
-                    <li key={actor.id}>
+                    <li className={styles.item} key={actor.id}>
                         <img
                             className={styles.img}
                             src={actor.profile_path ? `https://image.tmdb.org/t/p/w500${actor.profile_path}` : `https://fastly.picsum.photos/id/593/1774/2365.jpg?hmac=zzvok1xX2Is_tGRfdHUANqWsOIK0T-HVzWPkaMqZInw`}
                             alt={actor.name} />
-                        <p>{actor.name}</p>
+                        <p className={styles.name}>{actor.name}</p>
                     </li>
                 ))}
             </ul>
