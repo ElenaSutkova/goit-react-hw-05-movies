@@ -1,0 +1,33 @@
+.title{
+    font-family: "Roboto", serif;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 1.11;
+        letter-spacing: 0.72px;
+        text-transform: capitalize;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        padding: 50px 0;
+}
+
+.list{
+    list-style: none;
+}
+
+.item{
+    font-family: "Roboto", serif;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+}
+
+.author{
+    font-family: "Roboto", serif;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 1.11;
+        letter-spacing: 0.72px;
+        text-transform: capitalize;
+}
