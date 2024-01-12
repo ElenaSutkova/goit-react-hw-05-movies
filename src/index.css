@@ -23,3 +23,8 @@ a:hover,
 a:focus{
   color: #404BBF;
 }
+
+button:hover,
+button:focus{
+  color: #404BBF;
+}

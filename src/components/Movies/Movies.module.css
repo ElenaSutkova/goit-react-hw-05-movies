@@ -1,9 +1,60 @@
-/* .container{}
+.container{
+    padding: 20px 0;
+    position: sticky;
+    z-index: 1100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 55px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
 
-.form{}
+.form{
+    display: flex;
+    align-items: stretch;
+    gap: 30px;
+}
 
-.input{}
+.input{
+    border: 1px solid #F4F4FD;;
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+    padding: 8px 16px;
+    outline: transparent;
+    color:black;
+    font-family: "Roboto", serif;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 1.11;
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+}
 
-.button{}
+.button{
+    background-color: #F4F4FD;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+    margin: 0 auto;
+    padding: 8px 24px;
+    min-width: 165px;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 500;
+    letter-spacing: 0.64px;
+    border: 0;
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
 
-.span{} */
+.span{
+    font-family: "Roboto", serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.11;
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+}

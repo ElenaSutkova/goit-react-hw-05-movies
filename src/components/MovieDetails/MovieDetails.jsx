@@ -33,20 +33,20 @@ const MovieDetails = () => {
                     )}
                 </div>
                 <div className={styles.details}>
-                    <h2>{movieDetails.title}</h2>
-                    <p>User Score: {movieDetails.vote_average}</p>
-                    <h3>Overview</h3>
-                    <p>{movieDetails.overview}</p>
-                    <h3>Genres</h3>
-                    <p>{genres}</p>
+                    <h2 className={styles.title}>{movieDetails.title}</h2>
+                    <p className={styles.describe}>User Score: {movieDetails.vote_average}</p>
+                    <h3 className={styles.description}>Overview</h3>
+                    <p className={styles.describe}>{movieDetails.overview}</p>
+                    <h3 className={styles.description}>Genres</h3>
+                    <p className={styles.describe}>{genres}</p>
                 </div>
             </div>
             <div className={styles.additionalInfo}>
                 <h3 className={styles.additionalsTitle}>Additional Information</h3>
-                <ul>
-                    <li><Link to={`/movies/${movieId}/cast`}> Cast</Link>
+                <ul className={styles.listInfo}>
+                    <li className={styles.itemInfo}><Link to={`/movies/${movieId}/cast`}> Cast</Link>
                     </li>
-                    <li>
+                    <li className={styles.itemInfo}>
                         <Link to={`/movies/${movieId}/reviews`}> Reviews </Link>
                     </li>
                 </ul>
